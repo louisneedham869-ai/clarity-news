@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: clarity-news
+    runtime: node
+    plan: free
+    buildCommand: echo 'Zero dependency install'
+    startCommand: node server.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: PUBLIC_ORIGIN
+        sync: false
+      - key: GNEWS_API_KEY
+        sync: false
+      - key: GOOGLE_FACTCHECK_API_KEY
+        sync: false
+      - key: BRAVE_SEARCH_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false

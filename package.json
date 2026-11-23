@@ -1,0 +1,6 @@
+{
+  "name":"clarity-news","version":"1.0.0","private":true,"type":"module",
+  "description":"Evidence-first news reader and transparent claim review",
+  "scripts":{"start":"node server.mjs","dev":"node --watch server.mjs","test":"node --test"},
+  "engines":{"node":">=22"}
+}
